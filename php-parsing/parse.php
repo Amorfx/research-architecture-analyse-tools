@@ -1,5 +1,6 @@
 <?php
 
+use Clementdecou\PhpParsing\Visitors\UseFinalForDtos;
 use PhpParser\NodeTraverser;
 use PhpParser\ParserFactory;
 use PhpParser\PrettyPrinter\Standard;
@@ -11,10 +12,10 @@ $traverser     = new NodeTraverser();
 $prettyPrinter = new Standard();
 
 // add your visitor
-$traverser->addVisitor(new MyNodeVisitor);
+$traverser->addVisitor(new UseFinalForDtos());
 
 try {
-    $code = file_get_contents($fileName);
+    $code = file_get_contents(__DIR__ . '/src/Dto/UserProfileFormDto.php');
 
     // parse
     $stmts = $parser->parse($code);
