@@ -1,0 +1,6 @@
+parameters:
+    bootstrapFiles:
+        - vendor/autoload.php
+    customRulesetUsed: true
+rules:
+    - Clementdecou\ToolsPhpStan\Rules\UseFinalForDtos

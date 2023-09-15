@@ -1,0 +1,23 @@
+{
+    "name": "clementdecou/tools-php-stan",
+    "autoload": {
+        "psr-4": {
+            "Clementdecou\\ToolsPhpStan\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Clément Décou",
+            "email": "clement.decou@ornikar.com"
+        }
+    ],
+    "require-dev": {
+        "phpstan/phpstan": "^1.10",
+        "symfony/var-dumper": "*"
+    },
+    "config": {
+        "allow-plugins": {
+            "phpstan/extension-installer": true
+        }
+    }
+}
