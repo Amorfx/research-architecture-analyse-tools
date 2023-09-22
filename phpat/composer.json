@@ -1,0 +1,20 @@
+{
+    "name": "clementdecou/phpat",
+    "require": {
+        "phpat/phpat": "^0.10.8"
+    },
+    "autoload": {
+        "psr-4": {
+            "Clementdecou\\Phpat\\": "src/"
+        }
+    },
+    "scripts": {
+        "phpstan": "vendor/bin/phpstan -c phpstan.neon"
+    },
+    "authors": [
+        {
+            "name": "Clément Décou",
+            "email": "clement.decou@ornikar.com"
+        }
+    ]
+}

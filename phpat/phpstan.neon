@@ -1,0 +1,11 @@
+includes:
+    - vendor/phpat/phpat/extension.neon
+parameters:
+    customRulesetUsed: true
+    bootstrapFiles:
+        - vendor/autoload.php
+services:
+    -
+        class: Clementdecou\Phpat\Rules\DtosTest
+        tags:
+            - phpat.test
