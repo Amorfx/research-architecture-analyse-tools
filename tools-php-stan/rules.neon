@@ -7,3 +7,7 @@ services:
        class: Clementdecou\ToolsPhpStan\Rules\UseFinalForDtos
        tags:
            - phpstan.rules.rule
+    -
+       class: Clementdecou\ToolsPhpStan\Rules\NotUseLaravelHelpers
+       tags:
+           - phpstan.rules.rule

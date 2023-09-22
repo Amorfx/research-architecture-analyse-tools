@@ -3,7 +3,10 @@
     "autoload": {
         "psr-4": {
             "Clementdecou\\ToolsPhpStan\\": "src/"
-        }
+        },
+        "files": [
+            "src/functions.php"
+        ]
     },
     "authors": [
         {
