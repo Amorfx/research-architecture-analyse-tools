@@ -1,6 +1,6 @@
+includes:
+	- rules.neon
 parameters:
+    customRulesetUsed: true
     bootstrapFiles:
         - vendor/autoload.php
-    customRulesetUsed: true
-rules:
-    - Clementdecou\ToolsPhpStan\Rules\UseFinalForDtos

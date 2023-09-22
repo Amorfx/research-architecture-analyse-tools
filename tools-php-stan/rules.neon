@@ -1,0 +1,9 @@
+services:
+    -
+        class: Clementdecou\ToolsPhpStan\Rules\UseReadonlyPropertiesForDtos
+        tags:
+            - phpstan.rules.rule
+    -
+       class: Clementdecou\ToolsPhpStan\Rules\UseFinalForDtos
+       tags:
+           - phpstan.rules.rule
