@@ -1,0 +1,22 @@
+{
+    "name": "clementdecou/pest",
+    "require": {
+        "pestphp/pest": "^2.19"
+    },
+    "autoload": {
+        "psr-4": {
+            "Clementdecou\\Pest\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Clément Décou",
+            "email": "clement.decou@ornikar.com"
+        }
+    ],
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    }
+}
