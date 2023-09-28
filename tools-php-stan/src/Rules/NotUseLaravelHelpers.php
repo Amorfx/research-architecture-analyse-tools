@@ -24,8 +24,6 @@ class NotUseLaravelHelpers implements Rule
      */
     public function processNode(Node $node, Scope $scope): array
     {
-        $type = $node->getType();
-
         if ($node instanceof FuncCall) {
             if (!$node->name instanceof Name) {
                 return [];

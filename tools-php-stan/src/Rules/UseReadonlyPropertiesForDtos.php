@@ -36,6 +36,14 @@ class UseReadonlyPropertiesForDtos implements Rule
                     )
                 )->build();
             }
+
+            if (!$property->isReadOnly()) {
+                $errors[] = RuleErrorBuilder::message(
+                    sprintf('The property: %s is not readonly.',
+                        $property->getName()
+                    )
+                )->build();
+            }
         }
 
         return $errors;
